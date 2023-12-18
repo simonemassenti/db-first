@@ -1,0 +1,21 @@
+auto
+
+id - INT - UNSIGNED - AUTOINCREMENT - PRIMARY_KEY
+frame_number - VARCHAR(17) - NOTNULL 
+brand - VARCHAR(255) - NOTNULL
+model - VARCHAR(255) - NOTNULL
+version - VARCHAR(255) - NOTNULL
+production_year - YEAR - NOTNULL
+color - VARCHAR(255) - NOTNULL
+engine_type - VARCHAR(255) - NOTNULL
+engine_capacity_cc - SMALLINT - UNSIGNED - NOTNULL
+engine_power_cv - SMALLINT - UNSIGNED - NOTNULL
+fuel_type - VARCHAR(255) - NOTNULL
+car_doors - TINYINT - UNSIGNED - NOTNULL
+car_seats - TINYINT - UNSIGNED - NOTNULL
+weight_kg - INT - UNSIGNED - NULL
+tire_data - VARCHAR(11) - NULL
+is_crashed - TINYINT - NOTNULL - DEFAULT(0)
+price - DECIMAL(10,2) - NOTNULL
+discount_percent - DECIMAL(5, 2) - NOTNULL - DEFAULT
+tow_hook - TINYINT - NULL - DEFAULT(0)
